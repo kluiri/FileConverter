@@ -1,0 +1,12 @@
+<root>
+  <emp>
+    <emp_name>gast1</emp_name>
+    <email>gast2@localhost.com</email>
+    <job>internal</job>
+  </emp>
+  <emp>
+    <emp_name>gast2</emp_name>
+    <email>gast2@localhost.com</email>
+    <job>developer</job>
+  </emp>
+</root>

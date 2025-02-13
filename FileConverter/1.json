@@ -1,0 +1,14 @@
+{
+  "emp": [
+    {
+      "emp_name": "gast1",
+      "email": "gast2@localhost.com",
+      "job": "internal"
+    },
+    {
+      "emp_name": "gast2",
+      "email": "gast2@localhost.com",
+      "job": "developer"
+    }
+  ]
+}
