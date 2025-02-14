@@ -1,1 +1,1 @@
-﻿# FileConverter for yaml, json, csv, xml
+﻿# File converter for dictionary in json, csv, xml and yaml formats.
