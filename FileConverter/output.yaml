@@ -1,0 +1,7 @@
+emp:
+- email: gast2@localhost.com
+  emp_name: gast1
+  job: internal
+- email: gast2@localhost.com
+  emp_name: gast2
+  job: developer

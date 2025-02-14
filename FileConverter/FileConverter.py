@@ -57,6 +57,18 @@ def yaml_to_dict(yaml_file):
 def dict_to_yaml(dictionary):
     return yaml.dump(dictionary, default_flow_style=False)
 
+def json_to_yaml(json_file, yaml_file):
+    dictionary = json_to_dict(json_file)
+    yaml_data = dict_to_yaml(dictionary)
+    with open(yaml_file, 'w') as file:
+        file.write(yaml_data)
+
+def yaml_to_json(yaml_file, json_file):
+    dictionary = yaml_to_dict(yaml_file)
+    json_data = dict_to_json(dictionary)
+    with open(json_file, 'w') as file:
+        file.write(json_data)
+
 def main():
     while True:
         print(" 1  JSON to Dictionary")
@@ -66,8 +78,10 @@ def main():
         print(" 5  XML to Dictionary")
         print(" 6  Dictionary to XML")
         print(" 7  YAML to Dictionary")
-        print(" 8 Dictionary to YAML")
-        print(" 9 Programm beenden")
+        print(" 8  Dictionary to YAML")
+        print(" 9  JSON to YAML")
+        print(" 10 YAML to JSON")
+        print(" 11 Programm beenden")
 
         choice = int(input("Wähle eine Konvertierung: "))
 
@@ -96,6 +110,12 @@ def main():
             yaml_dict = yaml_to_dict('4.yml')
             print("Dictionary to YAML:\n", dict_to_yaml(yaml_dict))
         elif choice == 9:
+            json_to_yaml('1.json', 'output.yaml')
+            print("JSON to YAML konvertiert.")
+        elif choice == 10:
+            yaml_to_json('4.yml', 'output.json')
+            print("YAML to JSON konvertiert.")
+        elif choice == 11:
             print("Programm beendet.")
             break
         else:
@@ -103,5 +123,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
